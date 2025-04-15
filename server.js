@@ -8,7 +8,7 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/Academic_transcript', {
+mongoose.connect('mongodb+srv://daarlabhanumurthy:bhanu@academictranscript.msjnyzv.mongodb.net/?retryWrites=true&w=majority&appName=Academictranscript', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
