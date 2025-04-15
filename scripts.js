@@ -61,7 +61,7 @@ signinForm.addEventListener('submit', async (event) => {
   const responseElement = document.getElementById('response');
 
   try {
-    const response = await fetch('http://localhost:3000/api/student/signin', {
+    const response = await fetch('https://edumoon-internship.onrender.com/api/student/signin', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -103,7 +103,7 @@ adminsigninForm.addEventListener('submit', async (event) => {
   const responseElement = document.getElementById('response');
 
   try {
-    const response = await fetch('http://localhost:3000/api/admin/signin', {
+    const response = await fetch('https://edumoon-internship.onrender.com/api/admin/signin', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -149,7 +149,7 @@ document.getElementById('studentRegisterForm').addEventListener('submit', async 
   }
 
   try {
-    const response = await fetch('http://localhost:3000/api/student/signup', {
+    const response = await fetch('https://edumoon-internship.onrender.com/api/student/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -194,7 +194,7 @@ document.getElementById('adminRegisterForm').addEventListener('submit', async fu
   }
 
   try {
-    const response = await fetch('http://localhost:3000/api/admin/signup', {
+    const response = await fetch('https://edumoon-internship.onrender.com/api/admin/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

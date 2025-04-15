@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       try {
         // Fetch the student's marks from the backend
-        const response = await fetch(`http://localhost:3000/api/marks/${savedRegNo}`);
+        const response = await fetch(`https://edumoon-internship.onrender.com/api/marks/${savedRegNo}`);
         if (response.ok) {
           const marks = await response.json();
   

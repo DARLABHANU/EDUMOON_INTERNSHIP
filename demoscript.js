@@ -4,7 +4,7 @@
 //     const regNumber = document.getElementById('reg-number').value;
 //     const aadharNumber = document.getElementById('aadhar-number').value;
     
-//     fetch('http://localhost:3000/api/student/getAcademicMarks', {
+//     fetch('https://edumoon-internship.onrender.com/api/student/getAcademicMarks', {
 //         method: 'POST',
 //         headers: {
 //             'Content-Type': 'application/json',
@@ -102,7 +102,7 @@ window.addEventListener('click', function(event) {
     const regNumber = document.getElementById('reg-number').value;
 
     try {
-      const response = await fetch('http://localhost:3000/api/register-marks', {
+      const response = await fetch('https://edumoon-internship.onrender.com/api/register-marks', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -136,7 +136,7 @@ document.getElementById('student-form').addEventListener('submit', function(even
     const regnumber = document.getElementById('reg-number').value;
     
 
-    fetch('http://localhost:3000/api/searchstudent', {
+    fetch('https://edumoon-internship.onrender.com/api/searchstudent', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -180,7 +180,7 @@ form.addEventListener('submit', async (event) => {
   const subject6 = document.getElementById('subject6').value;
 
   try {
-    const response = await fetch('http://localhost:3000/api/marks', {
+    const response = await fetch('https://edumoon-internship.onrender.com/api/marks', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

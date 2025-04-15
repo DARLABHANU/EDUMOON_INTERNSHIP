@@ -28,7 +28,7 @@ form.addEventListener('submit', async (event) => {
   };
 
   try {
-    const response = await fetch('http://localhost:3000/achievements', {
+    const response = await fetch('https://edumoon-internship.onrender.com/achievements', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ document.getElementById('student-form').addEventListener('submit', async functio
     const regNumber = document.getElementById('regNumberInput').value;
 
     try {
-        const response = await fetch(`http://localhost:3000/api/achievements/${regNumber}`);
+        const response = await fetch(`https://edumoon-internship.onrender.com/api/achievements/${regNumber}`);
         if (!response.ok) {
             throw new Error('Achievement not found');
             alert('Achievement not found');
